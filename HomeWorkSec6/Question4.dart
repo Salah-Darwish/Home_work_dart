@@ -7,7 +7,7 @@ class Product {
   String name;
   double price;
 
-  Product(this.name, [this.price = 0.0]);
+  Product(this.name, [this.price = 0]);
 
   void displayDetails() {
     print("Product Name: $name, Price: $price");
@@ -15,7 +15,7 @@ class Product {
 }
 
 void main() {
-  Product product1 = Product("Laptop", 999.99);
+  Product product1 = Product("Laptop", 100);
   Product product2 = Product("Mouse");
 
   product1.displayDetails();
